@@ -1,9 +1,4 @@
-This project is a **multi-threaded task scheduler and process monitor** implemented in C, designed to manage and execute tasks across multiple threads while providing real-time system monitoring. Here's a detailed breakdown:
-
----
-
-### **Core Components**
-1. **Thread Pool Manager**  
+Pool Manager**  
    - Creates/manages worker threads (configurable count)  
    - Assigns tasks from a queue to available threads  
    - Implements thread-safe task distribution
@@ -92,3 +87,4 @@ distask/
 ```
 
 The project demonstrates robust systems programming in C, combining threading, process management, IPC, and terminal UI concepts into a cohesive tool.
+Thi
