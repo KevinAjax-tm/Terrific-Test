@@ -1,18 +1,3 @@
-Pool Manager**  
-   - Creates/manages worker threads (configurable count)  
-   - Assigns tasks from a queue to available threads  
-   - Implements thread-safe task distribution
-
-2. **Task Queue**  
-   - Circular buffer for task storage  
-   - Mutex-protected push/pop operations  
-   - Condition variables for thread synchronization
-
-3. **Subprocess Execution**  
-   - Uses `fork()` + `execvp()` to run tasks in isolated processes  
-   - Implements timeouts to prevent hanging tasks  
-   - Tracks process exit codes
-
 4. **Shared Memory IPC**  
    - POSIX shared memory (`shm_open`) for inter-process communication  
    - Stores task results with mutex protection  
